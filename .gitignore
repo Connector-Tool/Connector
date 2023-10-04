@@ -179,3 +179,7 @@ local_config.py
 data/*
 !data/Token
 !data/Validation
+
+# experiment 文件
+experiment/comp/res
+experiment/param/res
