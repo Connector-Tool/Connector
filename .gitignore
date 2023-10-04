@@ -174,3 +174,8 @@ local_config.py
 
 # .idea 配置文件
 .idea/
+
+# data 文件
+data/*
+!data/Token
+!data/Validation
