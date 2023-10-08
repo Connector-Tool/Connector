@@ -51,9 +51,16 @@ class Config(BaseSettings):
     DATA_DIR: str = PROJECT + "/data"
     EXPER_DIR: str = PROJECT + "/experiment"
 
+    ADDRESSLIST_DIR: str = DATA_DIR + "/AddressList"
+    CHAINID_DIR: str = DATA_DIR + "/ChainID"
+    KNOWLEDGE_DIR: dict = {
+        'event': DATA_DIR + "/Knowledge/Event",
+        'func': DATA_DIR + "/Knowledge/Func"
+    }
     BLOCK_DIR: str = DATA_DIR + "/Block"
     BRIDGETX_DIR: str = DATA_DIR + "/BridgeTx"
     TOKEN_DIR: str = DATA_DIR + "/Token"
+    MODEL_DIR: str = DATA_DIR + "/Model"
     VALIDATION_DIR: str = DATA_DIR + "/Validation"
     FIRST_PHRASE_DIR: str = DATA_DIR + "/FirstPhrase"
 

@@ -180,6 +180,7 @@ data/*
 !data/Token
 !data/Validation
 !data/FirstPhrase
+!data/Model
 
 # experiment 文件
 experiment/comp/res

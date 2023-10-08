@@ -22,17 +22,14 @@ import requests
 import pandas as pd
 from web3 import Web3
 
-from config import DataConfig, RequestConfig
-from collections import defaultdict
-data_config = DataConfig()
-request_config = RequestConfig()
+from config import Config
 
 
 class LogDecoder:
     def __init__(self, mainnet: str='ETH') -> None:
         self.mainnet = mainnet
-        self.api_key = request_config.API_KEY[mainnet.lower()][0]
-        self.provider = request_config.HTTPPROVIDER[mainnet.lower()][0]
+        self.api_key = Config().SCAN[mainnet].API_KEY[0]
+        self.provider = Config().NODE[mainnet][0].API
         self.web3 = Web3(Web3.HTTPProvider(self.provider))
     
     def decode_log(self, tx_hash_arr: list) -> list:
@@ -82,7 +79,6 @@ class LogDecoder:
             result.append(tmp_logs)
         return result
 
-    
     def _del_decoded_logs(self, decoded_logs):
         new_log = {}
         for log in decoded_logs:
@@ -105,21 +101,6 @@ class LogDecoder:
                 new_log[key] = item2
 
         return new_log
-
-
-if __name__ == '__main__':
-    file_path = data_config.TRAINDATA_DIR['label'] + "/label.csv"
-    data= pd.read_csv(file_path)
-    data = data[data['label']==1]
-    test_data = data.head(10)
-
-    tx_hash_arr = [tx[1]["srcTxhash"] for tx in test_data.iterrows()]
-    print(tx_hash_arr)
-
-    results = LogDecoder(
-        mainnet='ETH'
-    ).decode_log(tx_hash_arr)
-    print(results)
 
 
 

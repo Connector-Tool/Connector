@@ -8,9 +8,7 @@
 import json
 import requests
 
-# from etherscan.contracts import Contract
-from config import RequestConfig
-request_config = RequestConfig()
+from config import Config
 
 
 class ABIFetcher:
@@ -20,7 +18,7 @@ class ABIFetcher:
         
     def abi_fetch(self):
         # Function to fetch the ABI of a contract
-        ABI_ENDPOINT = f'https://api.etherscan.io/api?module=contract&action=getabi&address={self.contract_address}&apikey={request_config.API_KEY["eth"][0]}'
+        ABI_ENDPOINT = f'https://api.etherscan.io/api?module=contract&action=getabi&address={self.contract_address}&apikey={Config().SCAN["ETH"].API_KEY[0]} '
         
         response = requests.get(ABI_ENDPOINT)
         response_json = json.loads(response.text)

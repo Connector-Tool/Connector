@@ -106,6 +106,7 @@ input_celer = [
     }
 ]
 
+
 def PolyNetwork_keyExtractAndMap(input: list)->list:
     # Exist LockEvent event E and E.fromAddress = sender and
     # E.toAddress = receiver and E.fromAssetHash = assets and
@@ -127,6 +128,7 @@ def PolyNetwork_keyExtractAndMap(input: list)->list:
             result["args"]["dstChainId"] = data['args']['toChainId']
             results.append(results)
     return results
+
 
 def CelerNetwork_keyExtractAndMap(input:list)->list:
     # (Exist Send event E and E.sender = sender and E.receiver = receiver
@@ -182,6 +184,7 @@ def CelerNetwork_keyExtractAndMap(input:list)->list:
             results.append(result)
 
     return results
+
 
 def Multichain_keyExtractAndMap(input: list)->list:
 #    (Exist LogSwapout event E and E.account = sender and E.bindaddr

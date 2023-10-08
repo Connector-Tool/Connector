@@ -31,16 +31,12 @@ from sklearn.metrics import roc_auc_score
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 
-from config import DataConfig
-from utils.loader import read_data
+from config import Config
 from trained_model.word_embedding import TxWordVector
 from trained_model.structure_embedding import TxStructureVector
-data_config = DataConfig()
 
-def load_data():    
-    raw_tx = read_data(data_config.TRAINDATA_DIR['sample'], "sample.csv")
-    label = read_data(data_config.TRAINDATA_DIR['label'], "label.csv")
 
+def load_data(raw_tx, label):
     # Define embedding size
     STRUCTURE_EMBED_SIZE = 16
     SENTENCE_EMBED_SIZE = 36
@@ -86,6 +82,7 @@ def add_result(r, metric, classifier, value):
         r[metric][classifier] = value
     return r
 
+
 def train_model(feature, label):
     classifiers = [
         RandomForestClassifier(n_jobs=10),
@@ -104,7 +101,7 @@ def train_model(feature, label):
     for clf in classifiers:
         name = clf.__class__.__name__
         clf.fit(X_train, y_train)
-        joblib.dump(clf, data_config.MODELDATA_DIR + "/model.pkl")
+        joblib.dump(clf, Config().MODEL_DIR + "/model.pkl")
         train_predictions = clf.predict(X_test)
         acc = accuracy_score(y_test, train_predictions)
         pre = precision_score(y_test, train_predictions, average='binary', pos_label=POS_LABEL)

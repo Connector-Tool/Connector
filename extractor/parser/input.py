@@ -13,6 +13,7 @@ from web3 import Web3
 from web3.auto import w3
 from eth_utils import to_hex
 
+
 class InputDecoder:
     def __init__(self, input: str, contract_address: str, abi: str, mainnet: str = 'ETH') -> None:
         self.input = input
@@ -22,6 +23,7 @@ class InputDecoder:
     
     def decode_input(self):
         return decode_tx(self.contract_address, self.input, self.abi)
+
 
 def decode_tuple(t, target_field):
     output = dict()

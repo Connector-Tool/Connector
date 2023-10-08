@@ -82,3 +82,7 @@ def load_first_phrase_bridge_address(
     sample = pd.read_csv(sample_path)[['address', 'srcnet']]
 
     return sample.to_dict("records")
+
+
+def load_normalization_map():
+    return pd.read_csv(f"{Config().MODEL_DIR}/normalization_map.csv")

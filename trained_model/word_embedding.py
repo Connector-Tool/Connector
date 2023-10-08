@@ -11,14 +11,13 @@ import pandas as pd
 
 from gensim.models import Word2Vec
 from config import Config
-from utils.loader import read_data
-data_config = DataConfig()
+from utils.loader import load_normalization_map
 
 
 class TxWordVector:
     def __init__(self, txlist: pd.DataFrame, train=False):
         self.sample = txlist[['srcTxhash', 'function']]
-        self.norm_map = read_data(data_config.MODELDATA_DIR, "normalization_map.csv")
+        self.norm_map = load_normalization_map()
         self.train = train
 
     def creat_mapdict(self):
@@ -62,9 +61,9 @@ class TxWordVector:
     def word2vect(self, sentences, hash_sent):
         if self.train:
             model = Word2Vec(sentences, min_count=1, vector_size=1)
-            model.save(data_config.MODELDATA_DIR + "/word2vec_model.bin")
+            model.save(Config().MODEL_DIR + "/word2vec_model.bin")
         else:
-            model = Word2Vec.load(data_config.MODELDATA_DIR + "/word2vec_model.bin")
+            model = Word2Vec.load(Config().MODEL_DIR + "/word2vec_model.bin")
 
         all_sentence_vec={}
         for hash, sentence in hash_sent.items():
@@ -86,7 +85,6 @@ class TxWordVector:
         all_sentence_vec = self.word2vect(sentences, hash_sent)
 
         return all_sentence_vec
-
 
 
 

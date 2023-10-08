@@ -11,8 +11,7 @@ import pandas as pd
 from joblib import load
 from trained_model.structure_embedding import TxStructureVector
 from trained_model.word_embedding import TxWordVector
-from config import DataConfig
-data_config = DataConfig()
+from config import Config
 
 
 class DepositLocator:
@@ -52,7 +51,7 @@ class DepositLocator:
         feature = np.array(feature)
 
         # 加载模型
-        loaded_model = load(data_config.MODELDATA_DIR + "/model.pkl")
+        loaded_model = load(Config.MODEL_DIR + "/model.pkl")
 
         # 使用模型进行预测
         y_pred = loaded_model.predict(feature)

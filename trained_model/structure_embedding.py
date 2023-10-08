@@ -235,6 +235,7 @@ class HighOrderMotifCounter:
                         W[k1, k2] = W[k1, k2] + 1
         return W + W.transpose()
 
+
 class TxStructureVector:
     def __init__(self, raw_tx):
         self.raw_tx = raw_tx
