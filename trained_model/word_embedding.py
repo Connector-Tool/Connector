@@ -10,7 +10,7 @@ import json
 import pandas as pd
 
 from gensim.models import Word2Vec
-from config import DataConfig
+from config import Config
 from utils.loader import read_data
 data_config = DataConfig()
 

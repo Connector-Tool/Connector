@@ -179,6 +179,7 @@ local_config.py
 data/*
 !data/Token
 !data/Validation
+!data/FirstPhrase
 
 # experiment 文件
 experiment/comp/res
