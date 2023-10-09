@@ -81,7 +81,7 @@ class Config(BaseSettings):
 
     TOKEN_FILE: dict = {
         'ETH': TOKEN_DIR + "/ERC20.csv",
-        'BNB': TOKEN_DIR + "/BEP20.csv",
+        'BNB': TOKEN_DIR + "/BERC20.csv",
         'Polygon': TOKEN_DIR + "/PERC20.csv",
     }
 

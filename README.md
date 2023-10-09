@@ -24,10 +24,30 @@ pip install -r requirements
 
 The data folder of `Connector` is divided into four parts:
 
-- FirstPhrase: Contains full transaction dataset  the address of three cross-chain bridges and the full transaction set associated with the address
+1️⃣ FirstPhrase
+> Contains full transaction dataset.
+- `ETH` addresses related to Celer cBridge: `Celer.csv`
+- `ETH` transactions related to Celer cBridge addresses: `Celer_ETH.csv`
+- `ETH` addresses related to Multichain: `Multi.csv`
+- `ETH` transactions related to Multichain addresses: `Multi_ETH.csv`
+- `ETH` addresses related to PolyNetwork: `Poly.csv`
+- `ETH` transactions related to PolyNetwork addresses: `Poly_ETH.csv`
 
-- Model: 
 
-- Token: 
+2️⃣ Model
+> Contains model data related to deposit transaction recognition.
+- Normalized mappings related to function variables: `normalization_map.csv`
 
-- Validation：
+
+3️⃣ Token
+> Contains decimal place information for tokens on `ETH`, `BSC`, `Polygon`.
+- Data related to ERC20 decimals for `ETH`: `ERC20.csv`
+- Data related to ERC20 decimals for `BSC`: `BERC20.csv`
+- Data related to ERC20 decimals for `Polygon`: `PERC20.csv`
+
+4️⃣ Validation
+> Contains real label data sets related to three bridges and three chains.
+
+- Cross-chain transaction pair label: `label.csv`
+- Source chain deposit transaction sample: `sample.json`
+- Source chain deposit transaction input field: `input.csv`
