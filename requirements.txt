@@ -9,6 +9,7 @@ bitarray==2.8.2
 certifi==2023.7.22
 cffi==1.15.1
 charset-normalizer==3.2.0
+colorama==0.4.6
 constantly==15.1.0
 cryptography==41.0.3
 cssselect==1.2.0
@@ -76,6 +77,7 @@ smart-open==6.4.0
 threadpoolctl==3.2.0
 tldextract==3.4.4
 toolz==0.12.0
+tqdm==4.66.1
 Twisted==22.10.0
 twisted-iocpsupport==1.0.4
 typing_extensions==4.7.1

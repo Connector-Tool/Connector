@@ -19,7 +19,6 @@ sys.path.append(root_path)
 
 import json
 import requests
-import pandas as pd
 from web3 import Web3
 
 from config import Config

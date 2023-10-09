@@ -13,7 +13,7 @@ import pandas as pd
 from tqdm import tqdm
 
 from config import SpiderNetEnum
-from core.dst import WithdrawLocator
+from core.dst_chain import WithdrawLocator
 from extractor import BridgeSpider
 from utils import ChainEnum, BridgeEnum
 from utils.loader import load_validation_dataset
