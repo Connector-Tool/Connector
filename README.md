@@ -13,11 +13,14 @@ pip install -r requirements
 
 ## 🙌 How to use
 
+`Connector` consists of several modules, specifically:
 
-
-
-
-
+- `extractor`: For crawling blockchain data.
+- `configurator`: For extracting key transaction information.
+- `trained_model`: For training deposit transaction recognition models.
+- `core`: For tracking deposit-withdrawal transaction pairs.
+- `experiment`: For verifying model effects.
+- `utils`: For storing some auxiliary code.
 
 
 ## 🎁 Datasets
