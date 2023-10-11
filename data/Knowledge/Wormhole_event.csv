@@ -1,0 +1,3 @@
+Action,event_name,arguments,exampleTxhash
+Deposit,LogMessagePublished,"index_topic_1 address sender, uint64 sequence, uint32 nonce, bytes payload, uint8 consistencyLevel",ETH: 0x127891472e681c41599d50b29ca03d2b7297911bb46579ee9215259b29497050
+Deposit,Deposit,"index_topic_1 address dst, uint256 wad",ETH: 0x04cbd6ee72f144c8c145daf689c9e0c959cc8ed6e207d01b1126c88da60ce957

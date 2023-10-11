@@ -1,0 +1,5 @@
+Action,event_name,arguments,exampleTxhash
+Deposit,Swap,"uint16 chainId, uint256 dstPoolId, address from, uint256 amountSD, uint256 eqReward, uint256 eqFee, uint256 protocolFee, uint256 lpFee",ETH: 0x2d7f7e4631897b8115cb8a52be826b8e987b906f98b1ca7cfaaabfc90c752316
+Deposit,SendCredits,"uint16 dstChainId, uint256 dstPoolId, uint256 credits, uint256 idealBalance",ETH: 0x209419c48382ca142df6aebd7fcffc76812ccbc20d8b55ce8a3575196f0cabe2
+Withdraw,PacketReceived,"index_topic_1 uint16 srcChainId, bytes srcAddress, index_topic_2 address dstAddress, uint64 nonce, bytes32 payloadHash",BNB: 0x0993e135c5f173d0e1a745fe57cc8a94c10447d5bc31308bebee4f34abd18e53
+Deposit,Transfer,"index_topic_1 address from, index_topic_2 address to, uint256 value",ETH: 0xeeacd5d12364620f9432a73b4e4186fadf56f4713368f438fc7a16c022bc10c0

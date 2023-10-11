@@ -1,0 +1,3 @@
+Action,event_name,arguments,exampleTxhash
+Deposit,Transfer,"index_topic_1 address src, index_topic_2 address dst, uint256 wad",ETH: 0x053a9bb589690dcd78aaa022506149a9e542c530c209a500e2edeca9144a5a01
+Deposit,Transfer,"index_topic_1 address from, index_topic_2 address to, uint256 value",BNB: 0xd4e6f33563eb1f70135d6ce4493d643db495c5e8e3c0ff4522bdd162bde7c23f

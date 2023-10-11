@@ -1,0 +1,4 @@
+Action,func_name,arguments,exampleTxhash
+Deposit,lock,"uint128 lockId,address tokenAddress,bytes32 recipient,bytes4 destination,uint256 amount",ETH: 0x538896b407a57a9c523ef2daceb61ee368661ba014b41360c74e10540654d173
+Withdraw,unlock,"uint128 lockId,address recipient,uint256 amount,bytes4 lockSource,bytes4 tokenSource,bytes32 tokenSourceAddress,bytes signature",ETH: 0xe766a7851e550e9bfca304d21a84278519e939dabc3b8d9ffc03ed1f9e0294e4
+Deposit,swapAndBridge,"bytes32 token,uint256 amount,bytes32 recipient,uint8 destinationChainId,bytes32 receiveToken,uint256 nonce,uint8 messenger",ETH: 0x063e023aef02602a6e686c675bdbd94cbdefc2a908d96b58665156ad71444381

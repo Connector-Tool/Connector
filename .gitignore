@@ -177,6 +177,9 @@ local_config.py
 
 # data 文件
 data/*
+!data/AddressList
+!data/ChainID
+!data/Knowledge
 !data/Token
 !data/Validation
 !data/FirstPhrase

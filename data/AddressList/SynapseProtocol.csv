@@ -1,0 +1,5 @@
+address,contract_name,name_tag,srcnet
+0xd123f70AE324d34A9E76b67a27bf77593bA8749f,TransparentUpgradeableProxy,Synapse: Bridge,BNB
+0x2796317b0fF8538F253012862c06787Adfb8cEb6,TransparentUpgradeableProxy,Synapse: Bridge,ETH
+0x749F37Df06A99D6A8E065dd065f8cF947ca23697,L2BridgeZap,Synapse: Bridge Zap 1,BNB
+0x6571d6be3d8460CF5F7d6711Cd9961860029D85F,L1BridgeZap,Synapse: Bridge Zap 3,ETH

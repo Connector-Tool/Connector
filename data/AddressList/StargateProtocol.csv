@@ -1,0 +1,6 @@
+address,contract_name,name_tag,srcnet
+0x8731d54E9D02c286767d56ac03e8037C07e01e98,Router,Stargate Finance: Router,ETH
+0x4a364f8c717cAAD9A442737Eb7b8A55cc6cf18D8,Router,Stargate Finance: Router,BNB
+0x150f94B44927F078737562f0fcF3C95c01Cc2376,RouterETH,Stargate Finance: ETH Router,ETH
+0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6,StargateToken,Stargate Finance: STG Token,ETH
+0xB0D502E938ed5f4df2E681fE6E419ff29631d62b,StargateToken,Stargate Finance: STG Token,BNB

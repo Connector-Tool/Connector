@@ -1,0 +1,3 @@
+Action,event_name,arguments,exampleTxhash
+Deposit,LockEvent,"address fromAssetHash, address fromAddress, uint64 toChainId, bytes toAssetHash, bytes toAddress, uint256 amount",ETH: 0xa7ef44e44db882378e1339392f200850dfbf0d817ca271ebf96400df9ef2209e
+Withdraw,VerifyHeaderAndExecuteTxEvent,"uint64 fromChainID, bytes toContract, bytes crossChainTxHash, bytes fromChainTxHash",BNB: 0xd5f55b463045474d0feb0a7afaef8c7af8c9ffb2e1509b6d7f8ef14ea6fb1f19

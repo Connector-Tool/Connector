@@ -1,0 +1,8 @@
+address,contract_name,name_tag,srcnet
+0xdd90E5E87A2081Dcf0391920868eBc2FFB81a1aF,Bridge,Celer Network: cBridge 2.0 2,BNB
+0x5427FEFA711Eff984124bFBB1AB6fbf5E3DA1820,Bridge,Celer Network: cBridge V2,ETH
+0x78bc5Ee9F11d133A08b331C2e18fE81BE0Ed02DC,OriginalTokenVault,Celer Network: cBridge Original Token Vault,BNB
+0xB37D31b2A74029B5951a2778F959282E2D518595,OriginalTokenVault,Celer Network: cBridge Original Token Vault,ETH
+0x11a0c9270D88C99e221360BCA50c2f6Fda44A980,OriginalTokenVaultV2,Celer Network: Vault 2,BNB
+0x7510792A3B1969F9307F3845CE88e39578f2bAE1,OriginalTokenVaultV2,Celer Network: OriginalTokenVault V2,ETH
+0x841ce48F9446C8E281D3F1444cB859b4A6D0738C,CBridge,Celer Network: cBridge,ETH

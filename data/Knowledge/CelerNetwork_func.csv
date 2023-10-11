@@ -1,0 +1,17 @@
+Action,func_name,arguments,exampleTxhash
+Deposit,send,"address _receiver, address _token, uint256 _amount, uint64 _dstChainId, uint64 _nonce, uint32 _maxSlippage",BNB: 0xb5200c66c2f23aadffbf1578071cdee7ec642b30d5f1d00d3c262dd2adbcb7d0
+Withdraw,relay,"bytes _relayRequest, bytes[] _sigs, address[] _signers, uint256[] _powers",BNB: 0x36afccd9f2a2d7dc2b125048c347831c64f88aeb052751e7c2ccfb42f557a0ec
+Deposit,sendNative,"address _receiver, uint256 _amount, uint64 _dstChainId, uint64 _nonce, uint32 _maxSlippage",ETH: 0xb4c9a487648b83bb572c2f7a24bd3170a9cee33d3f7d233cd45dbf09bdadd53b
+Withdraw,withdraw,"bytes _request, bytes[] _sigs, address[] _signers, uint256[] _powers",BNB: 0x28b57651b60d9df5606eebcc2f4ee354735c9ca1c6783a16c20342c88bc7ce3e
+Deposit,deposit,"address _token, uint256 _amount, uint64 _mintChainId, address _mintAccount, uint64 _nonce",BNB: 0xa25d87ee76efae92315087ac111e53600ad59f5a07b311e63ea9294ddd3be7f4
+Deposit,depositNative,"uint256 _amount, uint64 _mintChainId, address _mintAccount, uint64 _nonce",BNB: 0x96e99b7090294e885b8f0ec3ccd2b6804bb8bdf94b3e588eb9982cda5179f72d
+Deposit,transferOut,"address _bridge, address _token, uint256 _amount, bytes32 _hashlock, uint64 _timelock, uint64 _dstChainId, address _dstAddress",ETH: 0x47cf5fddb07bda9da0973d211141c4067899b0307aef1b9e0adf699ccabca8d7
+Withdraw,transferIn,"address _dstAddress, address _token, uint256 _amount, bytes32 _hashlock, uint64 _timelock, uint64 _srcChainId, bytes32 _srcTransferId",ETH: 0xb249b11dfa2ac81cb0a32d593dc3c5d91bf1dfac6f4f97de46bf0dc00304739d
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,

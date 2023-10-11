@@ -1,0 +1,5 @@
+Action,event_name,arguments,exampleTxhash
+Deposit,LogAnySwapOut,"index_topic_1 address token, index_topic_2 address from, index_topic_3 address to, uint256 amount, uint256 fromChainID, uint256 toChainID",ETH: 0x57fd5771d0a9f62388697e600c670f696eaf5e3d73a60231a129d04b1a63dc6e
+Withdraw,LogAnySwapIn,"index_topic_1 bytes32 txhash, index_topic_2 address token, index_topic_3 address to, uint256 amount, uint256 fromChainID, uint256 toChainID",BNB: 0xe3ced83632f2065adec6659c067929558d21fe969d91c08865b285971373cad4
+Deposit,LogSwapout,"index_topic_1 address account, index_topic_2 address bindaddr, uint256 amount",BNB: 0x909a7eb74885978c07f642241c6b29da70bddb708b216e4f0017e2f8c0a46805
+Withdraw,Transfer,"index_topic_1 address from, index_topic_2 address to, uint256 value",ETH: 0xeff553c86c7092d395fe03b5c95b6ab59146154fd8feba14d797cd24fe3cd9c8

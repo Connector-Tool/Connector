@@ -1,0 +1,4 @@
+Action,event_name,arguments,exampleTxhash
+Deposit,CrossOutIIFunds,"address from, string to, uint256 amount, address ERC20, uint256 ethAmount, bytes data",BNB: 0x1d29afe75fd335da6d8f1c7c216acc3590e60611631c9652d624c4a8bbdc7c0d
+Withdraw,Transfer,"index_topic_1 address from, index_topic_2 address to, uint256 value",BNB: 0x539fc9a4f63b32af320c8cc66a155e9aa0c43f5238cbaa7e287b36c7cbda9cee
+Deposit,CrossOutFunds,"address from, string to, uint256 amount, address ERC20",ETH: 0x35eb691ae0c8e1786db05e3e2c59e5fc0fa5c2930feb51e898d2a6702b6e0cdb

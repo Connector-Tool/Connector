@@ -1,0 +1,7 @@
+Action,func_name,arguments,exampleTxhash
+Deposit,swap,"uint16 _dstChainId,uint256 _srcPoolId,uint256 _dstPoolId,address _refundAddress,uint256 _amountLD,uint256 _minAmountLD,tuple _lzTxParams,bytes _to,bytes _payload",ETH: 0x2d7f7e4631897b8115cb8a52be826b8e987b906f98b1ca7cfaaabfc90c752316
+Deposit,revertRedeemLocal,"uint16 _dstChainId,bytes _srcAddress,uint256 _nonce,address _refundAddress,tuple _lzTxParams",ETH: 0x209419c48382ca142df6aebd7fcffc76812ccbc20d8b55ce8a3575196f0cabe2
+Withdraw,validateTransactionProofV1,"uint16 _srcChainId,address _dstAddress,uint256 _gasLimit,bytes32 _blockHash,bytes32 _data,bytes _transactionProof",BNB: 0x0993e135c5f173d0e1a745fe57cc8a94c10447d5bc31308bebee4f34abd18e53
+Deposit,swapETH,"uint16 _dstChainId, address _refundAddress, bytes _toAddress, uint256 _amountLD, uint256 _minAmountLD",ETH: 0x558abe1190e680ab21265fae446f0cb54fd027fb3ca77feb623e456287adf05a
+Deposit,sendTokens,"uint16 _dstChainId, bytes _to, uint256 _qty, address zroPaymentAddress, bytes adapterParam",ETH: 0xeeacd5d12364620f9432a73b4e4186fadf56f4713368f438fc7a16c022bc10c0
+Withdraw,validateTransactionProofV2,"uint16 _srcChainId,address _dstAddress,uint256 _gasLimit,bytes32 _blockHash,bytes32 _data,bytes _transactionProof,address _to",FTM: 0x981ac4eea45fe1787ec61533560fcf46f5cb16c27a9d41c6aab5bd06a301307d

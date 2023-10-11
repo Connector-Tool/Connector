@@ -1,0 +1,3 @@
+Action,func_name,arguments,exampleTxhash
+Deposit,xcall,"uint32 _destination,address _to,address _asset,address _delegate,uint256 _amount,uint256 _slippage,bytes _callData",ETH: 0x8af681f91a177e24b68763f01c15b9efa7924d5bd23e5849e5127c7ee8c7dd18
+Deposit,xcallIntoLocal,"uint32 _destination,address _to,address _asset,address _delegate,uint256 _amount,uint256 _slippage,bytes _callData",ETH: 0x053a9bb589690dcd78aaa022506149a9e542c530c209a500e2edeca9144a5a01

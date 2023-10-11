@@ -1,0 +1,3 @@
+Action,event_name,arguments,exampleTxhash
+Deposit,Approval,"index_topic_1 address owner, index_topic_2 address spender, uint256 value",ETH: 0x97cb38e6a1cf15e3122b80ff40d9efc9650b0b94e0b477161f10b82dcccb1c80
+Withdraw,Transfer,"index_topic_1 address from, index_topic_2 address to, uint256 value",ETH: 0x255b34793636dbaf9b952fdc3675ada3231ea834ac63406135db7b0e3d5906f9

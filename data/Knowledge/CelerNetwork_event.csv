@@ -1,0 +1,7 @@
+Action,event_name,arguments,exampleTxhash
+Deposit,Send,"bytes32 transferId, address sender, address receiver, address token, uint256 amount, uint64 dstChainId, uint64 nonce, uint32 maxSlippage",BNB: 0xb5200c66c2f23aadffbf1578071cdee7ec642b30d5f1d00d3c262dd2adbcb7d0
+Withdraw,Relay,"bytes32 transferId, address sender, address receiver, address token, uint256 amount, uint64 srcChainId, bytes32 srcTransferId",BNB: 0x36afccd9f2a2d7dc2b125048c347831c64f88aeb052751e7c2ccfb42f557a0ec
+Withdraw,Withdrawn,"bytes32 withdrawId, address receiver, address token, uint256 amount, uint64 refChainId, bytes32 refId, address burnAccount",BNB: 0x28b57651b60d9df5606eebcc2f4ee354735c9ca1c6783a16c20342c88bc7ce3e
+Deposit,Deposited,"bytes32 depositId, address depositor, address token, uint256 amount, uint64 mintChainId, address mintAccount",BNB: 0xa25d87ee76efae92315087ac111e53600ad59f5a07b311e63ea9294ddd3be7f4
+Deposit,LogNewTransferOut,"bytes32 transferId, address sender, address receiver, address token, uint256 amount, bytes32 hashlock, uint64 timelock, uint64 dstChainId, address dstAddress",ETH: 0x47cf5fddb07bda9da0973d211141c4067899b0307aef1b9e0adf699ccabca8d7
+Withdraw,LogNewTransferIn,"bytes32 transferId, address sender, address receiver, address token, uint256 amount, bytes32 hashlock, uint64  timelock, uint64 srcChainId, bytes32 srcTransferId",ETH: 0xb249b11dfa2ac81cb0a32d593dc3c5d91bf1dfac6f4f97de46bf0dc00304739d
